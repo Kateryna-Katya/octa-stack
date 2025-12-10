@@ -1,19 +1,31 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="./#hero" class="logo">
+          <i data-lucide="layers" class="logo__icon"></i>
+          <span class="logo__text">Octa-Stack</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav" id="nav">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="./#hero" class="nav__link">Главная</a></li>
+              <li class="nav__item"><a href="./#about" class="nav__link">О платформе</a></li>
+              <li class="nav__item"><a href="./#benefits" class="nav__link">Преимущества</a></li>
+              <li class="nav__item"><a href="./#innovation" class="nav__link">Инновации</a></li>
+              <li class="nav__item"><a href="./#blog" class="nav__link">Блог</a></li>
+              <li class="nav__item nav__item--mobile-cta"><a href="#contact" class="btn btn--primary">Начать</a></li>
+          </ul>
+          <button class="nav__close" id="nav-close" aria-label="Закрыть меню">
+              <i data-lucide="x"></i>
+          </button>
+      </nav>
+
+      <div class="header__actions">
+          <a href="./#contact" class="btn btn--small btn--primary header__cta">Начать</a>
+          <button class="burger" id="burger" aria-label="Меню">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+          </button>
+      </div>
   </div>
 </header>
