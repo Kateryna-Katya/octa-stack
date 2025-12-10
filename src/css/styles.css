@@ -700,3 +700,101 @@ h1, h2, h3, h4 {
     .innovation__wrapper { grid-template-columns: 1fr 1fr; }
     .contact-wrapper { grid-template-columns: 1fr 1fr; }
 }
+/* --- LEGAL PAGES STYLES --- */
+.pages {
+  padding: 120px 0 80px; /* Отступ сверху для хедера */
+  background-color: var(--color-bg);
+  min-height: 100vh;
+}
+
+/* Белая карточка документа */
+.legal-doc {
+  background: var(--color-surface);
+  padding: 40px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(15, 23, 42, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  max-width: 800px; /* Ограничиваем ширину для удобства чтения */
+  margin: 0 auto;
+}
+
+/* Типографика документа */
+.legal-doc h1 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.legal-date {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.legal-doc h2 {
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  color: var(--color-text-main);
+}
+
+.legal-doc p {
+  font-size: 1rem;
+  color: var(--color-text-main);
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.legal-doc ul {
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+
+.legal-doc li {
+  margin-bottom: 12px;
+  padding-left: 10px;
+  position: relative;
+  color: var(--color-text-main);
+  line-height: 1.6;
+}
+
+/* Кастомные маркеры списка */
+.legal-doc ul li::marker {
+  color: var(--color-secondary);
+}
+
+.legal-doc strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.legal-doc a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.legal-doc a:hover {
+  color: var(--color-secondary);
+}
+
+.legal-footer {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 768px) {
+  .legal-doc {
+      padding: 24px;
+  }
+  .legal-doc h1 {
+      font-size: 1.6rem;
+  }
+  .legal-doc h2 {
+      font-size: 1.3rem;
+  }
+}
