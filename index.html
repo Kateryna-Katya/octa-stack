@@ -1,56 +1,417 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/octa-stack/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octa-Stack | Карьерный апгрейд и стратегии роста</title>
+    <meta name="description" content="Платформа года для карьерного роста. Технологии, которые работают на вас.">
+
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/octa-stack/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/octa-stack/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/octa-stack/assets/styles-dPorOqKS.css">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="./#hero" class="logo">
+          <i data-lucide="layers" class="logo__icon"></i>
+          <span class="logo__text">Octa-Stack</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav" id="nav">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="./#hero" class="nav__link">Главная</a></li>
+              <li class="nav__item"><a href="./#about" class="nav__link">О платформе</a></li>
+              <li class="nav__item"><a href="./#benefits" class="nav__link">Преимущества</a></li>
+              <li class="nav__item"><a href="./#innovation" class="nav__link">Инновации</a></li>
+              <li class="nav__item"><a href="./#blog" class="nav__link">Блог</a></li>
+              <li class="nav__item nav__item--mobile-cta"><a href="#contact" class="btn btn--primary">Начать</a></li>
+          </ul>
+          <button class="nav__close" id="nav-close" aria-label="Закрыть меню">
+              <i data-lucide="x"></i>
+          </button>
+      </nav>
+
+      <div class="header__actions">
+          <a href="./#contact" class="btn btn--small btn--primary header__cta">Начать</a>
+          <button class="burger" id="burger" aria-label="Меню">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+          </button>
+      </div>
   </div>
 </header>
 
-
-    <main>
+    <main class="main">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <div class="container hero__container">
+
+      <div class="hero__content">
+          <div class="hero__badge">
+              <i data-lucide="zap" class="hero__badge-icon"></i>
+              <span>Инновационная технология 2025</span>
+          </div>
+
+          <h1 class="hero__title">
+              Стратегия роста <br>
+              <span class="text-gradient">на базе инноваций</span>
+          </h1>
+
+          <p class="hero__desc">
+              Передовая цифровая инфраструктура для вашего профессионального взлета.
+              Решения, которые меняют правила игры, теперь доступны каждому.
+          </p>
+
+          <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+              <a href="#about" class="btn btn--outline">
+                  Узнать детали
+                  <i data-lucide="arrow-right" style="width: 18px;"></i>
+              </a>
+          </div>
+
+          <div class="hero__stats">
+              <div class="hero__stat-item">
+                  <span class="hero__stat-num">2 мин</span>
+                  <span class="hero__stat-label">Быстрый старт</span>
+              </div>
+              <div class="hero__stat-border"></div>
+              <div class="hero__stat-item">
+                  <span class="hero__stat-num">EU</span>
+                  <span class="hero__stat-label">Доступно в Европе</span>
+              </div>
+          </div>
+      </div>
+
+      <div class="hero__visual">
+          <div class="hero__art">
+              <div class="hero__circle hero__circle--1"></div>
+              <div class="hero__circle hero__circle--2"></div>
+              <div class="hero__card glass-card">
+                  <div class="glass-card__icon">
+                      <i data-lucide="trending-up"></i>
+                  </div>
+                  <div class="glass-card__content">
+                      <span class="glass-card__title">Карьерный рост</span>
+                      <span class="glass-card__subtitle">+145% эффективность</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+  <script src="https://unpkg.com/split-type"></script>
+</section>
+<section class="section about" id="about">
+  <div class="container">
+      <div class="section-header">
+          <span class="section-tag">О платформе</span>
+          <h2 class="section-title">Решения, которые <br>меняют правила игры</h2>
+          <p class="section-desc">Octa-Stack — это платформа года, объединяющая AI-инструменты для реальных задач и методологии, доказавшие эффективность в странах ЕС.</p>
+      </div>
+
+      <div class="bento-grid">
+          <div class="bento-card bento-card--large">
+              <div class="bento-content">
+                  <h3>Воплотите мечты в реальность</h3>
+                  <p>Переосмыслите подход к развитию. Наша технология нового поколения создает цифровую инфраструктуру для вашего пассивного дохода и карьерного роста.</p>
+                  <ul class="check-list">
+                      <li><i data-lucide="check-circle-2"></i> Удобная адаптация без сложностей</li>
+                      <li><i data-lucide="check-circle-2"></i> Стратегия роста на базе инноваций</li>
+                  </ul>
+              </div>
+              <div class="bento-visual">
+                  <img src="/octa-stack/assets/one-uhEhln2l.jpg" alt="Analytics Interface" class="img-cover">
+              </div>
+          </div>
+
+          <div class="bento-card bento-card--primary">
+              <i data-lucide="globe-2" class="bento-icon"></i>
+              <h3>EU Standard</h3>
+              <p>Платформа уже доступна в Европе. Проверенный партнер.</p>
+          </div>
+
+          <div class="bento-card">
+              <i data-lucide="zap" class="bento-icon bento-icon--accent"></i>
+              <h3>2 минуты</h3>
+              <p>Подключение занимает 2 минуты. Быстрый и лёгкий старт.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section benefits" id="benefits">
+  <div class="container">
+      <div class="section-header section-header--center">
+          <span class="section-tag">Преимущества</span>
+          <h2 class="section-title">Почему выбирают Octa-Stack?</h2>
+      </div>
+
+      <div class="features-grid">
+          <div class="feature-card">
+              <div class="feature-icon"><i data-lucide="cpu"></i></div>
+              <h4>Технология нового поколения</h4>
+              <p>Инновационная технология, которая автоматизирует рутину и открывает новые горизонты проекта.</p>
+          </div>
+
+          <div class="feature-card">
+              <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+              <h4>Экспертная поддержка</h4>
+              <p>Мы — проверенный партнер. Экспертная поддержка на всех этапах вашего пути.</p>
+          </div>
+
+          <div class="feature-card">
+              <div class="feature-icon"><i data-lucide="bar-chart-3"></i></div>
+              <h4>Пассивный доход</h4>
+              <p>Программа пассивного дохода и практики, применимые уже сегодня.</p>
+          </div>
+
+          <div class="feature-card">
+              <div class="feature-icon"><i data-lucide="users"></i></div>
+              <h4>Сообщество</h4>
+              <p>Постройте карьеру, которая работает на вас, в кругу единомышленников.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="smartphone"></i></div>
+            <h4>Полная мобильность</h4>
+            <p>Платформа всегда под рукой. Управляйте процессами и обучайтесь с любого устройства без ограничений.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="award"></i></div>
+            <h4>Сертификация EU</h4>
+            <p>Получите подтверждение навыков, которое высоко ценится работодателями в Германии и странах Евросоюза.</p>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="section innovation" id="innovation">
+  <div class="container">
+      <div class="innovation__wrapper">
+          <div class="innovation__content">
+              <span class="section-tag section-tag--light">Инновации</span>
+              <h2 class="section-title text-white">Технологии, которые <br>работают на вас</h2>
+              <p class="section-desc text-white-muted">
+                  Оцените перспективы проекта. Мы используем передовую цифровую инфраструктуру для анализа и прогнозирования трендов.
+              </p>
+              <div class="innovation__stats">
+                  <div class="stat-box">
+                      <span class="stat-num" data-target="98">0</span><span class="stat-sym">%</span>
+                      <span class="stat-label">Точность AI</span>
+                  </div>
+                  <div class="stat-box">
+                      <span class="stat-num" data-target="1500">0</span><span class="stat-sym">+</span>
+                      <span class="stat-label">Кейсов</span>
+                  </div>
+              </div>
+              <a href="#contact" class="btn btn--white margin-top-30">Получить больше информации</a>
+          </div>
+          <div class="innovation__visual">
+              <div class="radar">
+                  <div class="radar__circle"></div>
+                  <div class="radar__circle"></div>
+                  <div class="radar__circle"></div>
+                  <div class="radar__scan"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section blog" id="blog">
+  <div class="container">
+      <div class="section-header">
+          <span class="section-tag">Блог</span>
+          <h2 class="section-title">Карьерный апгрейд</h2>
+      </div>
+
+      <div class="blog-grid">
+          <article class="blog-card">
+              <div class="blog-thumb">
+                  <img src="img/placeholder.png" alt="AI Trends" class="img-cover">
+                  <span class="blog-cat">Тренды</span>
+              </div>
+              <div class="blog-body">
+                  <div class="blog-meta">02 Декабря 2025</div>
+                  <h3 class="blog-title">AI для обычных людей: как начать?</h3>
+                  <p class="blog-excerpt">Пошаговый путь, понятный каждому. Разбираем инструменты.</p>
+                  <a href="#" class="blog-link">Читать далее <i data-lucide="arrow-right"></i></a>
+              </div>
+          </article>
+
+          <article class="blog-card">
+              <div class="blog-thumb">
+                  <img src="img/placeholder.png" alt="Career Strategy" class="img-cover">
+                  <span class="blog-cat">Стратегия</span>
+              </div>
+              <div class="blog-body">
+                  <div class="blog-meta">28 Ноября 2025</div>
+                  <h3 class="blog-title">Инновации на пальцах</h3>
+                  <p class="blog-excerpt">Как использовать новые технологии для профессионального взлета.</p>
+                  <a href="#" class="blog-link">Читать далее <i data-lucide="arrow-right"></i></a>
+              </div>
+          </article>
+
+           <article class="blog-card">
+              <div class="blog-thumb">
+                  <img src="img/placeholder.png" alt="Future Work" class="img-cover">
+                  <span class="blog-cat">Будущее</span>
+              </div>
+              <div class="blog-body">
+                  <div class="blog-meta">25 Ноября 2025</div>
+                  <h3 class="blog-title">Программа пассивного дохода</h3>
+                  <p class="blog-excerpt">Мифы и реальность цифровой экономики в 2025 году.</p>
+                  <a href="#" class="blog-link">Читать далее <i data-lucide="arrow-right"></i></a>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="container">
+      <div class="contact-wrapper">
+          <div class="contact-info">
+              <span class="section-tag">Контакты</span>
+              <h2 class="section-title">Бесплатная консультация</h2>
+              <p class="section-desc">Оставьте заявку, чтобы получить доступ к платформе. Наши эксперты свяжутся с вами в течение 15 минут.</p>
+
+              <ul class="contact-list">
+                  <li>
+                      <div class="contact-icon"><i data-lucide="mail"></i></div>
+                      <div>
+                          <span>Email</span>
+                          <a href="mailto:hello@octa-stack.fit">hello@octa-stack.fit</a>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+                      <div>
+                          <span>Офис</span>
+                          <p>Torstraße 177, 10115 Berlin, Germany</p>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="contact-form-box">
+              <form id="leadForm" class="form" novalidate>
+                  <div class="form-group">
+                      <label for="name">Ваше имя</label>
+                      <input type="text" id="name" name="name" placeholder="Иван Петров" required>
+                      <span class="error-msg">Введите имя</span>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                      <span class="error-msg">Введите корректный email</span>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="phone">Телефон</label>
+                      <input type="tel" id="phone" name="phone" placeholder="+49..." required pattern="[0-9\+\-\s\(\)]+">
+                      <span class="error-msg">Только цифры и символы +, -, ()</span>
+                  </div>
+
+                  <div class="form-group captcha-group">
+                      <label id="captchaLabel" for="captchaInput">Сколько будет 2 + 2?</label>
+                      <input type="number" id="captchaInput" required>
+                      <span class="error-msg">Неверный ответ</span>
+                  </div>
+
+                  <div class="form-checkbox">
+                      <input type="checkbox" id="consent" required>
+                      <label for="consent">Я согласен с <a href="./personal-data-policy.html">Политикой обработки данных</a></label>
+                  </div>
+
+                  <button type="submit" class="btn btn--primary btn--full">Запросить доступ</button>
+              </form>
+
+              <div id="formSuccess" class="form-success" style="display: none;">
+                  <i data-lucide="check-circle" class="success-icon"></i>
+                  <h3>Заявка отправлена!</h3>
+                  <p>Мы свяжемся с вами в ближайшее время.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col">
+              <a href="./#hero" class="logo logo--footer">
+                  <i data-lucide="layers" class="logo__icon"></i>
+                  <span class="logo__text">Octa-Stack</span>
+              </a>
+              <p class="footer__desc">
+                  Передовая цифровая инфраструктура для вашего профессионального взлета.
+                  Проверенный партнер в странах ЕС.
+              </p>
+              <address class="footer__contacts">
+                  <a href="tel:+493012345678" class="footer__link">
+                      <i data-lucide="phone" class="footer__icon"></i>
+                      +49 30 123 456 78
+                  </a>
+                  <a href="mailto:hello@octa-stack.fit" class="footer__link">
+                      <i data-lucide="mail" class="footer__icon"></i>
+                      hello@octa-stack.fit
+                  </a>
+                  <span class="footer__text">
+                      <i data-lucide="map-pin" class="footer__icon"></i>
+                      Torstraße 177, 10115 Berlin, Deutschland
+                  </span>
+              </address>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Навигация</h3>
+              <ul class="footer__nav">
+                  <li><a href="./#about" class="footer__nav-link">О платформе</a></li>
+                  <li><a href="./#benefits" class="footer__nav-link">Преимущества</a></li>
+                  <li><a href="./#innovation" class="footer__nav-link">Инновации</a></li>
+                  <li><a href="./#blog" class="footer__nav-link">Карьерный блог</a></li>
+                  <li><a href="./#contact" class="footer__nav-link">Консультация</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Юридическая информация</h3>
+              <ul class="footer__nav">
+                  <li><a href="./privacy.html" class="footer__nav-link">Privacy Policy</a></li>
+                  <li><a href="./cookies.html" class="footer__nav-link">Cookies Policy</a></li>
+                  <li><a href="./terms.html" class="footer__nav-link">Terms of Use</a></li>
+                  <li><a href="./return.html" class="footer__nav-link">Return Policy</a></li>
+                  <li><a href="./disclaimer.html" class="footer__nav-link">Disclaimer</a></li>
+                  <li><a href="./personal-data-policy.html" class="footer__nav-link">Personal Data Policy</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; <span id="year">2025</span> Octa-Stack. Все права защищены.</p>
+      </div>
   </div>
 </footer>
-
-
+    <div id="cookiePopup" class="cookie-popup">
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+      <button id="acceptCookies" class="btn btn--small btn--primary">Принять</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   </body>
 </html>

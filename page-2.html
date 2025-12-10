@@ -5,29 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/octa-stack/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/octa-stack/assets/styles-dPorOqKS.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="./#hero" class="logo">
+          <i data-lucide="layers" class="logo__icon"></i>
+          <span class="logo__text">Octa-Stack</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav" id="nav">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="./#hero" class="nav__link">Главная</a></li>
+              <li class="nav__item"><a href="./#about" class="nav__link">О платформе</a></li>
+              <li class="nav__item"><a href="./#benefits" class="nav__link">Преимущества</a></li>
+              <li class="nav__item"><a href="./#innovation" class="nav__link">Инновации</a></li>
+              <li class="nav__item"><a href="./#blog" class="nav__link">Блог</a></li>
+              <li class="nav__item nav__item--mobile-cta"><a href="#contact" class="btn btn--primary">Начать</a></li>
+          </ul>
+          <button class="nav__close" id="nav-close" aria-label="Закрыть меню">
+              <i data-lucide="x"></i>
+          </button>
+      </nav>
+
+      <div class="header__actions">
+          <a href="./#contact" class="btn btn--small btn--primary header__cta">Начать</a>
+          <button class="burger" id="burger" aria-label="Меню">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+          </button>
+      </div>
   </div>
 </header>
-
 
     <main>
       <div class="container">
@@ -39,19 +50,60 @@
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col">
+              <a href="./#hero" class="logo logo--footer">
+                  <i data-lucide="layers" class="logo__icon"></i>
+                  <span class="logo__text">Octa-Stack</span>
+              </a>
+              <p class="footer__desc">
+                  Передовая цифровая инфраструктура для вашего профессионального взлета.
+                  Проверенный партнер в странах ЕС.
+              </p>
+              <address class="footer__contacts">
+                  <a href="tel:+493012345678" class="footer__link">
+                      <i data-lucide="phone" class="footer__icon"></i>
+                      +49 30 123 456 78
+                  </a>
+                  <a href="mailto:hello@octa-stack.fit" class="footer__link">
+                      <i data-lucide="mail" class="footer__icon"></i>
+                      hello@octa-stack.fit
+                  </a>
+                  <span class="footer__text">
+                      <i data-lucide="map-pin" class="footer__icon"></i>
+                      Torstraße 177, 10115 Berlin, Deutschland
+                  </span>
+              </address>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Навигация</h3>
+              <ul class="footer__nav">
+                  <li><a href="./#about" class="footer__nav-link">О платформе</a></li>
+                  <li><a href="./#benefits" class="footer__nav-link">Преимущества</a></li>
+                  <li><a href="./#innovation" class="footer__nav-link">Инновации</a></li>
+                  <li><a href="./#blog" class="footer__nav-link">Карьерный блог</a></li>
+                  <li><a href="./#contact" class="footer__nav-link">Консультация</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Юридическая информация</h3>
+              <ul class="footer__nav">
+                  <li><a href="./privacy.html" class="footer__nav-link">Privacy Policy</a></li>
+                  <li><a href="./cookies.html" class="footer__nav-link">Cookies Policy</a></li>
+                  <li><a href="./terms.html" class="footer__nav-link">Terms of Use</a></li>
+                  <li><a href="./return.html" class="footer__nav-link">Return Policy</a></li>
+                  <li><a href="./disclaimer.html" class="footer__nav-link">Disclaimer</a></li>
+                  <li><a href="./personal-data-policy.html" class="footer__nav-link">Personal Data Policy</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; <span id="year">2025</span> Octa-Stack. Все права защищены.</p>
+      </div>
   </div>
 </footer>
-
   </body>
 </html>
